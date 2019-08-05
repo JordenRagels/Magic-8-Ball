@@ -2,20 +2,30 @@
 
 <head>
     <title> Magic 8 Ball</title>
-    <link rel="style" href="style.css">
-   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- added bootstrap css link -->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- corrected link rel -->
+
 </head>
 
 <body>
-
-    <img src="https://us.123rf.com/450wm/geekclick/geekclick1906/geekclick190600029/124440356-stock-vector-number-eight-billiard-ball-icon-vector-illustration-of-a-magic-ball-cartoon-sign-symbol-.jpg?ver=6"
-        alt="Magic 8 Ball">
-    <h1> Magic 8 Ball</h1>
-
-    <p> Ask Me Anything </p>
-    <input id="userinput" type="input"></input>
-    <button id="button"> Submit </button>
-    <p id="response"></p>
- 
+                        <!-- added some bootstrap classes -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1> Magic 8 Ball</h1>
+                <!-- original image at https://us.123rf.com/450wm/geekclick/geekclick1906/geekclick190600029/124440356-stock-vector-number-eight-billiard-ball-icon-vector-illustration-of-a-magic-ball-cartoon-sign-symbol-.jpg?ver=6" -->
+                
+            </div>
+            <div class="col-10">
+                    <img src="../images/eight_ball.png" alt="Magic 8 Ball">
+                <p> Ask Me Anything </p>
+                <input id="userinput" type="input"></input>
+                <button id="button"> Submit </button>
+                <p id="response"></p>
+            </div>
+        </div>
+    </div>
     <script src="javascript.js"></script>
 </body>

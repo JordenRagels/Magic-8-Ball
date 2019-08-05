@@ -26,6 +26,8 @@ return answersList[answerIndex];
 //Listeners
 submitButton.addEventListener("click", function() {
 console.log('button clicked');
+
+
 var answerIndex = getRandNumber(answersList.length);
 responseArea.innerHTML = getRandAnswer(answerIndex);
 });
